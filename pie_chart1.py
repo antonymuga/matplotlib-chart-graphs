@@ -22,5 +22,6 @@ heavy_weight = my_data.loc[my_data.Weight > 200].count()[0]
 
 labels_weight = ['Light Weight','Light Medium','Medium Weight', 'Medium Heavy', 'Heavy']
 explode = (.4,.2, 0, 0, .4)
-my_plt.pie([light_weight, light_medium, medium_weight, medium_heavy, heavy_weight], labels=labels_weight, autopct='%.1f%%', pctdistance=0.8, explode=explode)
+my_plt.pie([light_weight, light_medium, medium_weight, medium_heavy, heavy_weight], labels=labels_weight, autopct='%.2f%%', pctdistance=0.8, explode=explode)
+my_plt.title("Weight distribution of FIFA players in pounds")
 my_plt.show()
